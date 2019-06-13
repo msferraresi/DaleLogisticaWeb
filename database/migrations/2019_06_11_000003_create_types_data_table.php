@@ -28,6 +28,6 @@ class CreateTypeDataTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('type__data');
+        Schema::dropIfExists('type_data');
     }
 }
