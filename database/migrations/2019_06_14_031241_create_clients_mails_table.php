@@ -18,7 +18,7 @@ class CreateClientsMailsTable extends Migration
             $table->unsignedInteger('id_client');
             $table->foreign('id_client')->references('id')->on('clients');
             $table->unsignedInteger('id_type');
-            $table->foreign('id_type')->references('id')->on('types_data');
+            $table->foreign('id_type')->references('id')->on('tipos');
             $table->string('name_contact')->nulleable();
             $table->string('email');
             $table->string('observations')->nulleable();

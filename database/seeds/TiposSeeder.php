@@ -1,9 +1,9 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use App\Types_Data;
+use App\Tipos;
 
-class TypesDataSeeder extends Seeder
+class TiposSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -12,20 +12,20 @@ class TypesDataSeeder extends Seeder
      */
     public function run()
     {
-        Types_Data::create([
+        Tipos::create([
             'name' => 'Principal'
         ]);
-        Types_Data::create([
+        Tipos::create([
             'name' => 'Secundario'
         ]);
-        Types_Data::create([
+        Tipos::create([
             'name' => 'Personal'
         ]);
-        Types_Data::create([
+        Tipos::create([
             'name' => 'Laboral'
         ]);
-        Types_Data::create([
-            'name' => 'Otros'
+        Tipos::create([
+            'name' => 'Otro'
         ]);
     }
 }

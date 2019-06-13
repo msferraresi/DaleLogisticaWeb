@@ -2,10 +2,10 @@
 
 /* @var $factory \Illuminate\Database\Eloquent\Factory */
 
-use App\Types_Data;
+use App\Tipos;
 use Faker\Generator as Faker;
 
-$factory->define(Types_Data::class, function (Faker $faker) {
+$factory->define(Tipos::class, function (Faker $faker) {
     return [
         //
     ];
