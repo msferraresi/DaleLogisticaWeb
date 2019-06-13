@@ -15,6 +15,11 @@ class CreateInvoicesDetailesTable extends Migration
     {
         Schema::create('invoices_detailes', function (Blueprint $table) {
             $table->increments('id');
+            $table->unsignedInteger('id_header');
+            $table->foreign('id_header')->references('id')->on('invoices_headers');
+            $table->string('from_adress');
+            $table->string('to_adress');
+            $table->decimal('partial_coast')->default(0);
             $table->timestamps();
             $table->softDeletes();
         });

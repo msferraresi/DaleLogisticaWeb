@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateInvoicesHeadersTable extends Migration
+class CreateClientsMailsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,15 @@ class CreateInvoicesHeadersTable extends Migration
      */
     public function up()
     {
-        Schema::create('invoices_headers', function (Blueprint $table) {
+        Schema::create('clients_mails', function (Blueprint $table) {
             $table->increments('id');
             $table->unsignedInteger('id_client');
             $table->foreign('id_client')->references('id')->on('clients');
-            $table->unsignedInteger('id_user');
-            $table->foreign('id_user')->references('id')->on('users');
+            $table->unsignedInteger('id_type');
+            $table->foreign('id_type')->references('id')->on('types_data');
+            $table->string('name_contact')->nulleable();
+            $table->string('email');
+            $table->string('observations')->nulleable();
             $table->timestamps();
             $table->softDeletes();
         });
@@ -31,6 +34,6 @@ class CreateInvoicesHeadersTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('invoices_headers');
+        Schema::dropIfExists('clients__mails');
     }
 }
