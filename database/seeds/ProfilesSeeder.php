@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-
+use App\Profiles;
 class ProfilesSeeder extends Seeder
 {
     /**
@@ -11,19 +11,17 @@ class ProfilesSeeder extends Seeder
      */
     public function run()
     {
-        profiles::create([
-            'id' => 1,
+        
+        Profiles::create([
             'name' => 'Administrador'
         ]);
 
-        profiles::create([
-            'id' => 2,
+        Profiles::create([
             'name' => 'Usuario'
         ]);
 
-        profiles::create([
-            'id' => 3,
-            'name' => 'Clientes'
+        Profiles::create([
+            'name' => 'Cliente'
         ]);
 
     }

@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use App\Zones;
 
 class ZonesSeeder extends Seeder
 {
@@ -11,17 +12,14 @@ class ZonesSeeder extends Seeder
      */
     public function run()
     {
-        zones::create([
-            'id' => 1,
+        Zones::create([
             'name' => 'Norte'
         ]);
-        zones::create([
-            'id' => 2,
-            'name' => 'Sur'
-        ]);
-        zones::create([
-            'id' => 3,
+        Zones::create([
             'name' => 'Oeste'
+        ]);
+        Zones::create([
+            'name' => 'Sur'
         ]);
     }
 }
