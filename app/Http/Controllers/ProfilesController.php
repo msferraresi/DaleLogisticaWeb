@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace DaleLogistica\Http\Controllers;
 
-use App\profiles;
+use DaleLogistica\profiles;
 use Illuminate\Http\Request;
 
 class ProfilesController extends Controller
@@ -41,7 +41,7 @@ class ProfilesController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\profiles  $profiles
+     * @param  \DaleLogistica\profiles  $profiles
      * @return \Illuminate\Http\Response
      */
     public function show(profiles $profiles)
@@ -52,7 +52,7 @@ class ProfilesController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\profiles  $profiles
+     * @param  \DaleLogistica\profiles  $profiles
      * @return \Illuminate\Http\Response
      */
     public function edit(profiles $profiles)
@@ -64,7 +64,7 @@ class ProfilesController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\profiles  $profiles
+     * @param  \DaleLogistica\profiles  $profiles
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, profiles $profiles)
@@ -75,7 +75,7 @@ class ProfilesController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\profiles  $profiles
+     * @param  \DaleLogistica\profiles  $profiles
      * @return \Illuminate\Http\Response
      */
     public function destroy(profiles $profiles)

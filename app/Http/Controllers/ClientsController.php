@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace DaleLogistica\Http\Controllers;
 
-use App\clients;
+use DaleLogistica\clients;
 use Illuminate\Http\Request;
 
 class ClientsController extends Controller
@@ -41,7 +41,7 @@ class ClientsController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\clients  $clients
+     * @param  \DaleLogistica\clients  $clients
      * @return \Illuminate\Http\Response
      */
     public function show(clients $clients)
@@ -52,7 +52,7 @@ class ClientsController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\clients  $clients
+     * @param  \DaleLogistica\clients  $clients
      * @return \Illuminate\Http\Response
      */
     public function edit(clients $clients)
@@ -64,7 +64,7 @@ class ClientsController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\clients  $clients
+     * @param  \DaleLogistica\clients  $clients
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, clients $clients)
@@ -75,7 +75,7 @@ class ClientsController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\clients  $clients
+     * @param  \DaleLogistica\clients  $clients
      * @return \Illuminate\Http\Response
      */
     public function destroy(clients $clients)

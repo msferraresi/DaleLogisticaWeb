@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace DaleLogistica\Http\Controllers;
 
-use App\Option_Data;
+use DaleLogistica\Option_Data;
 use Illuminate\Http\Request;
 
 class OptionDataController extends Controller
@@ -41,7 +41,7 @@ class OptionDataController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Option_Data  $option_Data
+     * @param  \DaleLogistica\Option_Data  $option_Data
      * @return \Illuminate\Http\Response
      */
     public function show(Option_Data $option_Data)
@@ -52,7 +52,7 @@ class OptionDataController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Option_Data  $option_Data
+     * @param  \DaleLogistica\Option_Data  $option_Data
      * @return \Illuminate\Http\Response
      */
     public function edit(Option_Data $option_Data)
@@ -64,7 +64,7 @@ class OptionDataController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Option_Data  $option_Data
+     * @param  \DaleLogistica\Option_Data  $option_Data
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, Option_Data $option_Data)
@@ -75,7 +75,7 @@ class OptionDataController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Option_Data  $option_Data
+     * @param  \DaleLogistica\Option_Data  $option_Data
      * @return \Illuminate\Http\Response
      */
     public function destroy(Option_Data $option_Data)

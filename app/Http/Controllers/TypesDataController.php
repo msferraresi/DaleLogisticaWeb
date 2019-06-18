@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace DaleLogistica\Http\Controllers;
 
-use App\Types_Data;
+use DaleLogistica\Types_Data;
 use Illuminate\Http\Request;
 
 class TypesDataController extends Controller
@@ -41,7 +41,7 @@ class TypesDataController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Types_Data  $types_Data
+     * @param  \DaleLogistica\Types_Data  $types_Data
      * @return \Illuminate\Http\Response
      */
     public function show(Types_Data $types_Data)
@@ -52,7 +52,7 @@ class TypesDataController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Types_Data  $types_Data
+     * @param  \DaleLogistica\Types_Data  $types_Data
      * @return \Illuminate\Http\Response
      */
     public function edit(Types_Data $types_Data)
@@ -64,7 +64,7 @@ class TypesDataController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Types_Data  $types_Data
+     * @param  \DaleLogistica\Types_Data  $types_Data
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, Types_Data $types_Data)
@@ -75,7 +75,7 @@ class TypesDataController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Types_Data  $types_Data
+     * @param  \DaleLogistica\Types_Data  $types_Data
      * @return \Illuminate\Http\Response
      */
     public function destroy(Types_Data $types_Data)

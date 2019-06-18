@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace DaleLogistica\Http\Controllers;
 
-use App\invoices_headers;
+use DaleLogistica\invoices_headers;
 use Illuminate\Http\Request;
 
 class InvoicesHeadersController extends Controller
@@ -41,7 +41,7 @@ class InvoicesHeadersController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\invoices_headers  $invoices_headers
+     * @param  \DaleLogistica\invoices_headers  $invoices_headers
      * @return \Illuminate\Http\Response
      */
     public function show(invoices_headers $invoices_headers)
@@ -52,7 +52,7 @@ class InvoicesHeadersController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\invoices_headers  $invoices_headers
+     * @param  \DaleLogistica\invoices_headers  $invoices_headers
      * @return \Illuminate\Http\Response
      */
     public function edit(invoices_headers $invoices_headers)
@@ -64,7 +64,7 @@ class InvoicesHeadersController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\invoices_headers  $invoices_headers
+     * @param  \DaleLogistica\invoices_headers  $invoices_headers
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, invoices_headers $invoices_headers)
@@ -75,7 +75,7 @@ class InvoicesHeadersController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\invoices_headers  $invoices_headers
+     * @param  \DaleLogistica\invoices_headers  $invoices_headers
      * @return \Illuminate\Http\Response
      */
     public function destroy(invoices_headers $invoices_headers)

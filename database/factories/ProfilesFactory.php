@@ -2,7 +2,7 @@
 
 /* @var $factory \Illuminate\Database\Eloquent\Factory */
 
-use App\profiles;
+use DaleLogistica\profiles;
 use Faker\Generator as Faker;
 
 $factory->define(profiles::class, function (Faker $faker) {

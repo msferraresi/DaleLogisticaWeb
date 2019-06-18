@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Providers;
+namespace DaleLogistica\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Schema;

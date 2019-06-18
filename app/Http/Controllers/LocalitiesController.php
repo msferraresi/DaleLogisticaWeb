@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace DaleLogistica\Http\Controllers;
 
-use App\localities;
+use DaleLogistica\localities;
 use Illuminate\Http\Request;
 
 class LocalitiesController extends Controller
@@ -41,7 +41,7 @@ class LocalitiesController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\localities  $localities
+     * @param  \DaleLogistica\localities  $localities
      * @return \Illuminate\Http\Response
      */
     public function show(localities $localities)
@@ -52,7 +52,7 @@ class LocalitiesController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\localities  $localities
+     * @param  \DaleLogistica\localities  $localities
      * @return \Illuminate\Http\Response
      */
     public function edit(localities $localities)
@@ -64,7 +64,7 @@ class LocalitiesController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\localities  $localities
+     * @param  \DaleLogistica\localities  $localities
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, localities $localities)
@@ -75,7 +75,7 @@ class LocalitiesController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\localities  $localities
+     * @param  \DaleLogistica\localities  $localities
      * @return \Illuminate\Http\Response
      */
     public function destroy(localities $localities)

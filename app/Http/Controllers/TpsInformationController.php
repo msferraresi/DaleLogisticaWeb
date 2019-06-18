@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace DaleLogistica\Http\Controllers;
 
-use App\Tps_Information;
+use DaleLogistica\Tps_Information;
 use Illuminate\Http\Request;
 
 class TpsInformationController extends Controller
@@ -41,7 +41,7 @@ class TpsInformationController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Tps_Information  $tps_Information
+     * @param  \DaleLogistica\Tps_Information  $tps_Information
      * @return \Illuminate\Http\Response
      */
     public function show(Tps_Information $tps_Information)
@@ -52,7 +52,7 @@ class TpsInformationController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Tps_Information  $tps_Information
+     * @param  \DaleLogistica\Tps_Information  $tps_Information
      * @return \Illuminate\Http\Response
      */
     public function edit(Tps_Information $tps_Information)
@@ -64,7 +64,7 @@ class TpsInformationController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Tps_Information  $tps_Information
+     * @param  \DaleLogistica\Tps_Information  $tps_Information
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, Tps_Information $tps_Information)
@@ -75,7 +75,7 @@ class TpsInformationController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Tps_Information  $tps_Information
+     * @param  \DaleLogistica\Tps_Information  $tps_Information
      * @return \Illuminate\Http\Response
      */
     public function destroy(Tps_Information $tps_Information)

@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace DaleLogistica;
 
 use Illuminate\Database\Eloquent\Model;
 

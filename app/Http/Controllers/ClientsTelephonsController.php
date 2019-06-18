@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace DaleLogistica\Http\Controllers;
 
-use App\Clients_Telephons;
+use DaleLogistica\Clients_Telephons;
 use Illuminate\Http\Request;
 
 class ClientsTelephonsController extends Controller
@@ -41,7 +41,7 @@ class ClientsTelephonsController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Clients_Telephons  $clients_Telephons
+     * @param  \DaleLogistica\Clients_Telephons  $clients_Telephons
      * @return \Illuminate\Http\Response
      */
     public function show(Clients_Telephons $clients_Telephons)
@@ -52,7 +52,7 @@ class ClientsTelephonsController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Clients_Telephons  $clients_Telephons
+     * @param  \DaleLogistica\Clients_Telephons  $clients_Telephons
      * @return \Illuminate\Http\Response
      */
     public function edit(Clients_Telephons $clients_Telephons)
@@ -64,7 +64,7 @@ class ClientsTelephonsController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Clients_Telephons  $clients_Telephons
+     * @param  \DaleLogistica\Clients_Telephons  $clients_Telephons
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, Clients_Telephons $clients_Telephons)
@@ -75,7 +75,7 @@ class ClientsTelephonsController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Clients_Telephons  $clients_Telephons
+     * @param  \DaleLogistica\Clients_Telephons  $clients_Telephons
      * @return \Illuminate\Http\Response
      */
     public function destroy(Clients_Telephons $clients_Telephons)

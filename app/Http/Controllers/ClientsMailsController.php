@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace DaleLogistica\Http\Controllers;
 
-use App\Clients_Mails;
+use DaleLogistica\Clients_Mails;
 use Illuminate\Http\Request;
 
 class ClientsMailsController extends Controller
@@ -41,7 +41,7 @@ class ClientsMailsController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Clients_Mails  $clients_Mails
+     * @param  \DaleLogistica\Clients_Mails  $clients_Mails
      * @return \Illuminate\Http\Response
      */
     public function show(Clients_Mails $clients_Mails)
@@ -52,7 +52,7 @@ class ClientsMailsController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Clients_Mails  $clients_Mails
+     * @param  \DaleLogistica\Clients_Mails  $clients_Mails
      * @return \Illuminate\Http\Response
      */
     public function edit(Clients_Mails $clients_Mails)
@@ -64,7 +64,7 @@ class ClientsMailsController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Clients_Mails  $clients_Mails
+     * @param  \DaleLogistica\Clients_Mails  $clients_Mails
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, Clients_Mails $clients_Mails)
@@ -75,7 +75,7 @@ class ClientsMailsController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Clients_Mails  $clients_Mails
+     * @param  \DaleLogistica\Clients_Mails  $clients_Mails
      * @return \Illuminate\Http\Response
      */
     public function destroy(Clients_Mails $clients_Mails)

@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace DaleLogistica\Http\Controllers;
 
-use App\invoices_detailes;
+use DaleLogistica\invoices_detailes;
 use Illuminate\Http\Request;
 
 class InvoicesDetailesController extends Controller
@@ -41,7 +41,7 @@ class InvoicesDetailesController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\invoices_detailes  $invoices_detailes
+     * @param  \DaleLogistica\invoices_detailes  $invoices_detailes
      * @return \Illuminate\Http\Response
      */
     public function show(invoices_detailes $invoices_detailes)
@@ -52,7 +52,7 @@ class InvoicesDetailesController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\invoices_detailes  $invoices_detailes
+     * @param  \DaleLogistica\invoices_detailes  $invoices_detailes
      * @return \Illuminate\Http\Response
      */
     public function edit(invoices_detailes $invoices_detailes)
@@ -64,7 +64,7 @@ class InvoicesDetailesController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\invoices_detailes  $invoices_detailes
+     * @param  \DaleLogistica\invoices_detailes  $invoices_detailes
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, invoices_detailes $invoices_detailes)
@@ -75,7 +75,7 @@ class InvoicesDetailesController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\invoices_detailes  $invoices_detailes
+     * @param  \DaleLogistica\invoices_detailes  $invoices_detailes
      * @return \Illuminate\Http\Response
      */
     public function destroy(invoices_detailes $invoices_detailes)

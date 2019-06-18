@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace DaleLogistica\Http\Controllers;
 
-use App\zones;
+use DaleLogistica\zones;
 use Illuminate\Http\Request;
 
 class ZonesController extends Controller
@@ -41,7 +41,7 @@ class ZonesController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\zones  $zones
+     * @param  \DaleLogistica\zones  $zones
      * @return \Illuminate\Http\Response
      */
     public function show(zones $zones)
@@ -52,7 +52,7 @@ class ZonesController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\zones  $zones
+     * @param  \DaleLogistica\zones  $zones
      * @return \Illuminate\Http\Response
      */
     public function edit(zones $zones)
@@ -64,7 +64,7 @@ class ZonesController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\zones  $zones
+     * @param  \DaleLogistica\zones  $zones
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, zones $zones)
@@ -75,7 +75,7 @@ class ZonesController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\zones  $zones
+     * @param  \DaleLogistica\zones  $zones
      * @return \Illuminate\Http\Response
      */
     public function destroy(zones $zones)

@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace DaleLogistica\Http\Controllers;
 
-use App\Clients_Addresses;
+use DaleLogistica\Clients_Addresses;
 use Illuminate\Http\Request;
 
 class ClientsAddressesController extends Controller
@@ -41,7 +41,7 @@ class ClientsAddressesController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Clients_Addresses  $clients_Addresses
+     * @param  \DaleLogistica\Clients_Addresses  $clients_Addresses
      * @return \Illuminate\Http\Response
      */
     public function show(Clients_Addresses $clients_Addresses)
@@ -52,7 +52,7 @@ class ClientsAddressesController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Clients_Addresses  $clients_Addresses
+     * @param  \DaleLogistica\Clients_Addresses  $clients_Addresses
      * @return \Illuminate\Http\Response
      */
     public function edit(Clients_Addresses $clients_Addresses)
@@ -64,7 +64,7 @@ class ClientsAddressesController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Clients_Addresses  $clients_Addresses
+     * @param  \DaleLogistica\Clients_Addresses  $clients_Addresses
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, Clients_Addresses $clients_Addresses)
@@ -75,7 +75,7 @@ class ClientsAddressesController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Clients_Addresses  $clients_Addresses
+     * @param  \DaleLogistica\Clients_Addresses  $clients_Addresses
      * @return \Illuminate\Http\Response
      */
     public function destroy(Clients_Addresses $clients_Addresses)

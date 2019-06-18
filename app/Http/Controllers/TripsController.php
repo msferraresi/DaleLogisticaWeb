@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace DaleLogistica\Http\Controllers;
 
-use App\trips;
+use DaleLogistica\trips;
 use Illuminate\Http\Request;
 
 class TripsController extends Controller
@@ -41,7 +41,7 @@ class TripsController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\trips  $trips
+     * @param  \DaleLogistica\trips  $trips
      * @return \Illuminate\Http\Response
      */
     public function show(trips $trips)
@@ -52,7 +52,7 @@ class TripsController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\trips  $trips
+     * @param  \DaleLogistica\trips  $trips
      * @return \Illuminate\Http\Response
      */
     public function edit(trips $trips)
@@ -64,7 +64,7 @@ class TripsController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\trips  $trips
+     * @param  \DaleLogistica\trips  $trips
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, trips $trips)
@@ -75,7 +75,7 @@ class TripsController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\trips  $trips
+     * @param  \DaleLogistica\trips  $trips
      * @return \Illuminate\Http\Response
      */
     public function destroy(trips $trips)
